@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somtech IT Hub - Online Cyber Services</title>
+    <!-- External CSS & JS -->
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <!-- HEADER SECTION -->
+    <header>
+        <h1>Somtech IT Hub</h1>
+        <p>Your One-Stop Digital Solution</p>
+        <hr>
+    </header>
+
+    <main>
+        <!-- ABOUT SECTION -->
+        <section>
+            <h2>About Our Services</h2>
+            <p>Somtech IT Hub provides fast, reliable, and affordable online cyber services to clients both locally and remotely. Whether you are near or far, we ensure your digital needs are met without hassle.</p>
+            
+            <h3>Our Popular Services:</h3>
+            <ul>
+                <li>Online Government Services (KRA, NTSA, eCitizen, etc.)</li>
+                <li>Document Printing and Scanning</li>
+                <li>Passport and Visa Application Assistance</li>
+                <li>Academic Certificates and Transcripts Requests</li>
+                <li>Graphic Design and Document Formatting</li>
+            </ul>
+        </section>
+
+        <!-- PRICE TABLE SECTION -->
+        <section>
+            <h2>Service Price List</h2>
+            <table border="1" cellpadding="5" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>Service</th>
+                        <th>Price (KES)</th>
+                        <th>Estimated Time</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>KRA PIN Registration</td>
+                        <td>200</td>
+                        <td>10 minutes</td>
+                    </tr>
+                    <tr>
+                        <td>NTSA Services</td>
+                        <td>300</td>
+                        <td>15 minutes</td>
+                    </tr>
+                    <tr>
+                        <td>Document Printing (per page)</td>
+                        <td>20</td>
+                        <td>5 minutes</td>
+                    </tr>
+                    <tr>
+                        <td>Passport Application Assistance</td>
+                        <td>500</td>
+                        <td>30 minutes</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- MEDIA SECTION -->
+        <section>
+            <h2>Media Showcase</h2>
+            <figure>
+                <img src="Somtech-Banner.jpg" alt="Cyber Services" width="400">
+                <figcaption>Providing quality online services anywhere you are.</figcaption>
+            </figure>
+
+            <p>Listen to our welcome message:</p>
+            <audio controls>
+                <source src="somtech.m4a" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+
+            <p>Watch our quick introduction video:</p>
+            <video width="400" controls>
+                <source src="somtech.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </section>
+
+        <!-- FORM SECTION -->
+        <section>
+            <h2>Online Service Request / Booking Form</h2>
+            <p>Please fill out the form below to request our services or send documents for processing.</p>
+
+            <form action="#" method="post" enctype="multipart/form-data" autocomplete="on">
+                <!-- Personal Info -->
+                <fieldset>
+                    <legend>Personal Information</legend>
+
+                    <label for="fullname">Full Name:</label>
+                    <input type="text" id="fullname" name="fullname" required minlength="3" maxlength="50" placeholder="Enter your full name">
+                    <br><br>
+
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required placeholder="example@mail.com">
+                    <br><br>
+
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required pattern="[0-9]{10}" placeholder="07XXXXXXXX">
+                    <br><br>
+
+                    <label for="address">Location / Address:</label>
+                    <input type="text" id="address" name="address" placeholder="Your location" maxlength="100">
+                </fieldset>
+                <br>
+
+                <!-- Service Details -->
+                <fieldset>
+                    <legend>Service Details</legend>
+
+                    <label for="service-type">Select Service:</label>
+                    <select id="service-type" name="service-type" required>
+                        <option value="">--Choose a Service--</option>
+                        <option value="kra">KRA Services</option>
+                        <option value="ntsa">NTSA Services</option>
+                        <option value="passport">Passport/Visa Application</option>
+                        <option value="printing">Document Printing</option>
+                        <option value="design">Graphic Design</option>
+                        <option value="other">Other</option>
+                    </select>
+                    <br><br>
+
+                    <label for="instructions">Description / Special Instructions:</label><br>
+                    <textarea id="instructions" name="instructions" rows="4" cols="40" placeholder="Describe your request here..." maxlength="500"></textarea>
+                    <br><br>
+
+                    <span>Preferred Delivery Method:</span><br>
+                    <input type="radio" id="email-delivery" name="delivery" value="email" required>
+                    <label for="email-delivery">Email</label><br>
+
+                    <input type="radio" id="whatsapp-delivery" name="delivery" value="whatsapp">
+                    <label for="whatsapp-delivery">WhatsApp</label><br>
+
+                    <input type="radio" id="pickup-delivery" name="delivery" value="pickup">
+                    <label for="pickup-delivery">In-person Pickup</label><br><br>
+
+                    <label for="urgency">Urgency:</label>
+                    <input type="checkbox" id="urgency" name="urgency" value="urgent">
+                    <label for="urgency">Mark as Urgent</label>
+                </fieldset>
+                <br>
+
+                <!-- Attachments -->
+                <fieldset>
+                    <legend>Attachments</legend>
+                    <label for="files">Upload Files (PDF, DOC, JPG, PNG):</label>
+                    <input type="file" id="files" name="files" accept=".pdf,.doc,.docx,.jpg,.jpeg,.png" multiple required>
+                </fieldset>
+                <br>
+
+                <!-- Confirmation -->
+                <fieldset>
+                    <legend>Confirmation</legend>
+                    <input type="checkbox" id="terms" name="terms" value="agree" required>
+                    <label for="terms">I agree to the terms and conditions</label>
+                    <br><br>
+                    <input type="submit" value="Submit Request">
+                    <input type="reset" value="Clear Form">
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <!-- FOOTER SECTION -->
+    <footer>
+        <hr>
+        <p>Contact us: 0700 000 000 | Email: info@somtechithub.com</p>
+        <p>
+            Follow us on social media:
+            <a href="https://www.facebook.com/somtechithub" target="_blank">Facebook</a> |
+            <a href="https://www.twitter.com/somtechithub" target="_blank">Twitter</a> |
+            <a href="https://www.instagram.com/somtechithub" target="_blank">Instagram</a>
+        </p>
+        <p>&copy; 2025 Somtech IT Hub. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
